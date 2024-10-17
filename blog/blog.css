@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+:root {
+    --primary-font: "Playfair Display", serif;
+}
+
+body {
+    margin: 0;
+}
+#title {
+    text-align: center;
+}
+.link_head {
+    justify-content: end;
+    justify-items: end;
+    display: flex;
+    list-style-type: none; /* Remove default bullets */
+    column-gap: 30px;
+    padding-right: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-style: solid;
+    border-right: 0px;
+    border-left: 0px;
+    border-color: #EFC69B;
+}
+a {
+    color: #AF1B3F;
+    text-decoration: none;
+    padding: 20px;
+}
+
+.book_article h2{
+    color: #AF1B3F;
+}
+.book_section {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+.book_info h2 {
+    font-size: 1.1rem;
+
+}
+.grid {
+    display: grid;
+    grid-template-columns: 2fr   .5fr;
+}
+.filter {
+    grid-column: 2 / span 10;
+}
+li{
+    list-style-type: none; /* Remove default bullets */
+}
