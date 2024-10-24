@@ -24,4 +24,52 @@ const articles = [
 		genre: 'Fantasy',
 		stars: '⭐⭐⭐⭐'
 	}
-]
+];
+
+const gridContainer = document.querySelector('.grid');
+
+function renderArticles(articles) {
+	articles.forEach(article => {  // Change articles to singular 'article'
+
+		// Create the book_section div
+		const bookSection = document.createElement('div');
+		bookSection.classList.add('book_section');
+
+		// Create book_info div
+		const bookInfo = document.createElement('div');
+		bookInfo.classList.add('book_info');
+		
+		// Create the ul element with book details
+		const bookDetails = `
+            <ul>
+                <li><h2>${article.date}</h2></li>
+                <li><p>${article.ages}</p></li>
+                <li><p>${article.genre}</p></li>
+                <li><p>${article.stars}</p></li>
+            </ul>
+        `;
+		bookInfo.innerHTML = bookDetails;
+
+		// Create book_article div
+		const bookArticle = document.createElement('div');
+		bookArticle.classList.add('book_article');
+
+		// Create the content for the book article
+		const bookContent = `
+            <h2>${article.title}</h2>
+            <img src="${article.imgSrc}" alt="${article.imgAlt}">
+            <p>${article.description}</p>
+        `;
+		bookArticle.innerHTML = bookContent;
+
+		// Append the book_info and book_article to the book_section
+		bookSection.appendChild(bookInfo);
+		bookSection.appendChild(bookArticle);  // Correct typo here (boookSection)
+
+		// Append the book_section to the grid container
+		gridContainer.appendChild(bookSection);
+	});
+}
+
+// Call the function to render the articles
+renderArticles(articles);

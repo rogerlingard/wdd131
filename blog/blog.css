@@ -23,12 +23,32 @@ body {
     border-left: 0px;
     border-color: #EFC69B;
 }
+
+.link_head a {
+    color: #AF1B3F;
+    font-family: var(--primary-font);
+    text-decoration: none;
+}
+
+.book_article img {
+    margin: 0 auto;
+    display: block;
+}
+.book_info
 a {
     color: #AF1B3F;
     text-decoration: none;
     padding: 20px;
 }
-
+.book_info{
+    text-align: right;
+    margin-right: 40px;
+    border-color: #EFC69B;
+    border-style: solid;
+    border-top: 0px;
+    border-bottom: 0px;
+    padding-right: 20px;
+}
 .book_article h2{
     color: #AF1B3F;
 }
@@ -42,11 +62,20 @@ a {
 }
 .grid {
     display: grid;
-    grid-template-columns: 2fr   .5fr;
+    grid-template-columns: 1fr;
 }
 .filter {
     grid-column: 2 / span 10;
+    border: #EFC69B;
+    border-style: solid;
+    margin: 10px;
+
 }
 li{
     list-style-type: none; /* Remove default bullets */
+}
+
+main {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
 }
