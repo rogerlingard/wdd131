@@ -29,7 +29,7 @@ const articles = [
 const gridContainer = document.querySelector('.grid');
 
 function renderArticles(articles) {
-	articles.forEach(article => {  // Change articles to singular 'article'
+	articles.forEach(article => {  
 
 		// Create the book_section div
 		const bookSection = document.createElement('div');
@@ -62,11 +62,10 @@ function renderArticles(articles) {
         `;
 		bookArticle.innerHTML = bookContent;
 
-		// Append the book_info and book_article to the book_section
+		
 		bookSection.appendChild(bookInfo);
-		bookSection.appendChild(bookArticle);  // Correct typo here (boookSection)
+		bookSection.appendChild(bookArticle);  
 
-		// Append the book_section to the grid container
 		gridContainer.appendChild(bookSection);
 	});
 }
