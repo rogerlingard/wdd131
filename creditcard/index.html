@@ -19,17 +19,17 @@ src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgZGF0YS1uYW1lP
             
                 <div id="card-number">
                     <label>Card Number</label>
-                    <input type="text" id="card-number" placeholder="1234 5678 9101 1020" maxlength="19">
+                    <input type="text" id="card-number" placeholder="1234 5678 9101 1020" maxlength="19" required>
                 </div>
             
                 <div id="card-holder">
                     <label>Card Holder</label>
-                    <input type="text" id="card-holder" placeholder="John Doe">
+                    <input type="text" id="card-holder" placeholder="John Doe" required>
                 </div>
                 <div id="expiration-container">
                     <label>Expiration</label>
-                    <input id="card-month" type="text" placeholder="MM" maxlength="2">
-                    <input id="card-year" type="text" placeholder="YY" maxlength="2">
+                    <input id="card-month" type="text" placeholder="MM" maxlength="2" required>
+                    <input id="card-year" type="text" placeholder="YY" maxlength="2" required>
                 </div>
         </div>
 
@@ -38,7 +38,7 @@ src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgZGF0YS1uYW1lP
             <div class="magnetic-stripe"></div>
             <div id="cvc-container">
                 <label>CVC/CVV</label>
-                <input type="text" id="cvc" placeholder="xxx" maxlength="3">
+                <input type="text" id="cvc" placeholder="xxx" maxlength="3" required>
             </div>
         </div>
 
