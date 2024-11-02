@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    background-color: white;
+    place-items: center;
+    height: 100vh;
+}
+
+
+#card-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: .25fr 1fr .25fr .25fr;
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    gap: 20px;
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    position: relative;
+}
+
+#card-front {
+    display: grid;
+    background: #f0f0f0;
+    color: #555;
+    z-index: 2;
+    grid-row: 1 / 3;
+    grid-column: 1 / 3;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 5px 5px 8px #555;
+}
+
+#card-back {
+    display: grid;
+    grid-template-columns: 2fr .75fr;
+    grid-template-rows: 1fr 1fr;
+    background: #e0e0e0;
+    color: #555;
+    position: absolute;
+    grid-row: 2 / 4;
+    grid-column: 2 / 4;
+}
+
+.magnetic-stripe {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    padding: 0;
+    width: 100%;
+    height: 40px;
+    background-color: #333;
+    align-self: center;
+}
+
+.total {
+    color: #666;
+    font-size: 14px;
+}
+
+.card-image {
+    position: absolute;
+    border-radius: 4px;
+    grid-row:  1 / 2;
+    grid-column: 2 / 3;
+    justify-self: end;
+    
+}
+
+#card-number {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+    width: 100%;
+}
+.card-total {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #666;
+    letter-spacing: 0.5px;
+}
+
+#card-holder {
+    grid-column: 1 / 2;
+    grid-row: 3 /4;
+}
+
+#expiration-container {
+    grid-column: 2 / 3;
+    grid-row: 3 /4;
+    justify-content: center;
+}
+#card-month {
+    width: 30%;
+}
+
+#card-year {
+    width: 30%;
+}
+
+.total {
+    align-self:center;
+}
+#cvc-container {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    z-index: 1;
+    align-self: center;
+}
+
+#cvc {
+    width: 50%;
+}
+
+input[type="submit"] {
+    float: right;
+    background: white;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    grid-column: 3 / 4;
+    grid-row: 4 / 5 ;
+}
+
+input[type="submit"]:hover {
+    background: #f5f5f5;
+}
