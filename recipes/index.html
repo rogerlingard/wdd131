@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="recipes.css">
+    <link rel="icon" href="favicon.png">
+    <meta name="description" content="making a recipes site to make fun and amazing recipes">
+    <meta name="author" content="Roger Lingard">
+
+    <meta property="og:title" content="Recipe Bonanza">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="We give you recipes to make at home">
+
+
+    <script type="module" src="main.js" defer></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div id="recipe-header">
+                <img id="recipe-book" src="/recipes/images/images/recipe-book.png" alt="recipe book logo">
+                <h1 id="recipe-title">RECIPEBOOK</h1>
+            </div>
+        </header>
+        <main>
+            <div id="recipe-search">
+                <input id="recipe-textbox" type="text" name="recipe-search" placeholder="Find a Recipe">
+                <button id="img-button">
+                    <img id="search-img" src="/recipes/images/images/search.svg" alt="search button">
+                </button>
+            </div>
+            <hr id="line">
+            <div class="recipe-box">
+                <img class="recipe-img" src="/recipes/images/images/apple-crisp.jpg" alt="apple crip dessert">
+                <div class="recipe-info">
+                    <span class="tag">Dessert</span>
+                    <h1 class="recipe-title">Apple Crisp</h1>
+                    <span class="rating" role="img" aria-label="Rating: 4 out of 5 stars">
+                        <span aria-hidden="true" class="icon-star">⭐</span>
+                        <span aria-hidden="true" class="icon-star">⭐</span>
+                        <span aria-hidden="true" class="icon-star">⭐</span>
+                        <span aria-hidden="true" class="icon-star">⭐</span>
+                        <span aria-hidden="true" class="icon-star-empty">☆</span>
+                    </span>
+                    <p class="description">This apple crisp recipe is a simple yet delicious fall dessert that's great served warm with vanilla ice cream. </p>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="social">
+                <h1>Recipe icons created by - Freepik</h1>
+                <div id="social-img">
+                    <a href="#"><img src="/recipes/images/images/instagram_icon.svg" alt="instagram icon"></a>
+                    <a href="#"><img src="/recipes/images/images/youtube_icon.svg" alt="youtube icon"></a>
+                    <a href="#"><img src="/recipes/images/images/pinterest_icon.svg" alt="pinterest icon"></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>

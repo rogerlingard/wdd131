@@ -1,72 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-
-    <script>
-        const a = 1
-        let b = 2
-        var c = 3
-
-
-        const obj = {
-            a: 1,
-            b: 2,
-            c: 3,
-            d: 4,
-
-            getName: () => {
-                return "Brother Willden"
-            }
-        }
-
-
-        function sum(a, b) {
-            return a + b
-
-        }
-
-
-        const sum2 = (a, b) => a + b
-
-        const sum3 = function (a, b) {
-            return a + b
-        }
-
-        console.log(obj.a)
-        console.log(obj.getName())
-
-        const d = document
-        d.getElementById()
-
-        d.querySelector('ul')
-
-
-
-        const listItems = d.querySelectorAll('li')
-
-        let counter = 0
-        while (counter < 10) {
-            console.log('hello')
-            counter++
-        }
-
-        for (let i = 0; i < 10; i++){
-            console.log("I am in a for loop" + i)
-        }
-
-        listItems.forEach((ele) => {
-
-            ele.classList.add('hello')
-        })
-
-
-
-    </script>
-    
-</body>
+<html>
+  <head>
+    <title>Array Activities</title>
+    <script src="arrays.js" defer></script>
+  </head>
+  <body>
+    <ul id="myList"></ul>
+  </body>
 </html>
