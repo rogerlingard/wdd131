@@ -92,11 +92,12 @@
 .tag {
     border-style: solid;
     border-width: 2px;
-    width: 60px;
     text-align: center;
+    margin: 2px;
+    padding: 1px;
 }
 .recipe-info{
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
     margin-left: 20px;
 }

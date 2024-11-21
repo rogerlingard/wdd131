@@ -116,7 +116,3 @@ init();
 
 const searchButton = document.querySelector('#img-button');
 searchButton.addEventListener('click', searchHandler);
-
-
-const recipe = getRandomListEntry(recipes);
-console.log(recipeTemplate(recipe));
