@@ -38,13 +38,12 @@ ul.navLinks {
     margin: 0;
     padding: 0;
     justify-content: flex-end;
+    align-items: center;
 }
 
 ul.navLinks li{
     margin-left: 20px;
-    padding: 20px;
-    font-size: 1.55em;    
-    border-radius: 5px;         
+    padding: 20px;          
     margin-right: 30px;
 }
 
@@ -53,6 +52,8 @@ ul.navLinks a {
     transition: color 0.3s;     
     color: black;
     padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.55em;
 }
 ul.navLinks a:hover{
     background-color: #735946;
@@ -125,4 +126,90 @@ footer{
     padding: 20px;
     padding-top: 5%;
     width: 100%;
+}
+
+#contact-form-container {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+  
+  #contact-form-container input,
+  #contact-form-container textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  #contact-form-container button {
+    background-color: #B28869;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  #contact-form-container button:hover {
+    background-color: #C89295;
+  }
+
+
+#form-overlay {
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  
+  #contact-form-container {
+    animation: slideIn 0.3s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translate(-50%, -60%);
+    }
+    to {
+      transform: translate(-50%, -50%);
+    }
+  }
+  
+
+  #contact-button button {
+    background: none;         
+    border: none;              
+    color: black;              
+    text-decoration: none;     
+    padding: 10px 20px;        
+    font-size: 1.55em;
+    border-radius: 5px;        
+    margin-right: 30px;        
+    cursor: pointer;          
+    transition: color 0.3s;   
+}
+
+#contact-button button:hover {
+    background-color: #735946;
+    color: #C89295;            
+}
+
+#close-button{
+    position: absolute;
+    top: 10px;
+    right: 10px;
 }
